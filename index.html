@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trabaja con Nosotros | Incorporación de Cajeros</title>
+  <link href="https://fonts.googleapis.com" rel="stylesheet" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src='https://connect.facebook.net';
+    s=b.getElementsByTagName(e);
+    s.parentNode.insertBefore(t,s)}(window, document,'script');
+    fbq('init', '3179788885541776'); 
+    fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    :root {
+      --whatsapp-green: #25d366;
+      --trust-blue: #075e54; 
+      --light-bg: #f0f4f8;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--light-bg);
+      color: #1e293b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 15px 120px 15px;
+    }
+
+    .header-bar {
+      background: white;
+      width: 100%;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 28px;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+      border: 1px solid #ffffff;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .hero-title {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--trust-blue);
+      margin: 0 0 10px 0;
+      line-height: 1.2;
+    }
+
+    .highlight { color: var(--whatsapp-green); }
+
+    .hero-subtitle {
+      font-size: 16px;
+      color: #64748b;
+      margin-bottom: 25px;
+      font-weight: 500;
+    }
+
+    .features {
+      text-align: left;
+      margin: 20px 0 30px 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .features li {
+      margin-bottom: 14px;
+      font-weight: 600;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      color: #334155;
+    }
+
+    .features li::before {
+      content: '✔';
+      background: var(--whatsapp-green);
+      color: white;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    /* ANIMACIÓN DE SALTO MEJORADA */
+    @keyframes jump-attention {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4); }
+      40% { transform: translateY(-18px); box-shadow: 0 25px 35px rgba(37, 211, 102, 0.3); }
+      60% { transform: translateY(-8px); }
+    }
+
+    .whatsapp-btn {
+      background: var(--whatsapp-green);
+      color: white;
+      padding: 22px 10px;
+      border-radius: 20px;
+      font-weight: 800;
+      text-decoration: none;
+      display: block;
+      font-size: 18px;
+      animation: jump-attention 2.8s ease-in-out infinite;
+      transition: background 0.3s ease;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .whatsapp-btn:hover {
+      background: #21bd5b;
+    }
+
+    .footer-note {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #ffffff;
+      color: var(--trust-blue);
+      padding: 20px;
+      font-weight: 800;
+      font-size: 15px;
+      border-top: 2px solid var(--whatsapp-green);
+      z-index: 1000;
+      box-shadow: 0 -5px 15px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-bar">
+    <span style="font-weight: 800; color: #94a3b8; font-size: 14px;">EQUIPO DE RECLUTAMIENTO</span>
+  </div>
+
+  <div class="card">
+    <div class="badge">Oportunidad Única 🚀</div>
+    <h1 class="hero-title">Estamos incorporando <span class="highlight">C4JER0S</span></h1>
+    <p class="hero-subtitle">Trabajá con nosotros y accedé a las mejores condiciones.</p>
+    
+    <ul class="features">
+      <li><strong>CRECE CON NOSOTROS</strong> profesionalmente</li>
+      <li><strong>MEJORA TU PORCENTAJE</strong> por rendimiento</li>
+      <li>Las mejores condiciones del sector</li>
+      <li>Pagos rápidos y garantizados</li>
+      <li>Soporte y capacitación constante</li>
+    </ul>
+
+    <a class="whatsapp-btn" 
+       href="https://wa.me."  
+       target="_blank"
+       onclick="fbq('track', 'Contact')">
+      POSTULARME POR WHATSAPP 📲
+    </a>
+  </div>
+
+  <div class="footer-note">
+    ⭐ SUMATE HOY Y MEJORÁ TUS INGRESOS ⭐
+  </div>
+
+</body>
+</html>
